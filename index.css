@@ -1,0 +1,61 @@
+/* General Layout */
+body {
+    background-color: #FAF9F6;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    color: #000000;
+}
+
+/* Header Style */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Input Field Styling */
+#usernameInput {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    background-color: #ffffff; /* Slightly lighter than bisque */
+    color: #5d4037;
+    outline: none;
+    width: 250px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+#usernameInput:focus {
+    box-shadow: 0 0 10px rgba(93, 64, 55, 0.3);
+}
+
+/* Matching the Button Style from previous pages */
+button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(93, 64, 55, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(93, 64, 55, 0.4);
+}
+
+button:active {
+    transform: scale(0.98);
+}

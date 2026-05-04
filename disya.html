@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrioImutzBirthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FAF9F6;
+            color: #000000;
+            font-family: 'Playfair Display', serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Container Pesan */
+        .message-container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Pirata One', system-ui;
+            font-size: 3rem;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.15rem;
+            text-align: justify;
+            hyphens: auto;
+            color: #1a1a1a;
+        }
+
+        /* Navigasi */
+        .nav-container-top, .nav-container-bottom {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .btn-nav {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 25px;
+            background-color: #000000;
+            color: #FAF9F6;
+            text-decoration: none;
+            font-family: 'Pirata One', system-ui;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        .btn-nav:hover {
+            transform: scale(1.05);
+            background-color: #333333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon {
+            margin: 0 8px;
+            font-size: 1.4rem;
+        }
+
+        /* Animasi masuk */
+        .message-container {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="message-container">
+        <h1>Happy Birthday, Disya!</h1>
+        <p>YEY DISYI 17 semoga disyi semakin disyi, semakin imyut, makin pinter, bisa keterima di Psikologi Unpad LETS GO! dan koleksi yang imut-imutnya makin
+            banyak please RAMAIKAN TERUS DISYA. Aku suka banget sama disyi, km girlie bgt disyi MIGHT BE MY INSPIRATION buat beli printilan-printilan, using
+            cute clothes, dan menjadi syentil. Terima kasih disyi sudah mau menjadi temanku walaupun aku
+            gajelas :v Thank you for trusting me buat jadi tempat kamu  bercerita, AKU JANJI AKAN KEEP IT SECRET
+            AND I'M READY FOR HEARING YOUR RANDOM STORIES! Keep creative disyaaaa, EVERYONE LOVES YOUR CUTE THINGS!
+        </p>
+    </div>
+
+    <div class="nav-container-bottom">
+        <a href="disya2.html" class="btn-nav">
+            Lanjyut lagi <span class="icon">→</span>
+        </a>
+    </div>
+
+    <div class="nav-container-top" style="margin-top: 20px;">
+        <a href="index.html" class="btn-nav" style="background: none; color: #666; border: 1px solid #ddd; font-size: 1rem;">
+            <span class="icon">←</span> Kembali
+        </a>
+    </div>
+    
+
+</body>
+</html>
