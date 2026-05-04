@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: bisque;
+    background-image: url("tambahin background yang isinya text-text yg mau kmu tulis");
+    background-size: cover;
+
+}
+.container {
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+.image-container img {
+    width: 400px;
+    height: auto;
+    border: 5px solid #333;
+}
+
+.top { top: -10px; left: 50%; transform: translateX(-50%); }
+.bottom { bottom: -10px; left: 50%; transform: translateX(-50%); }
+.left { left: -200px; top: 50%; transform: translateY(-50%) rotate(-90deg); }
+.right { right: -200px; top: 50%; transform: translateY(-50%) rotate(90deg); }
+
+/* Container for the image and labels */
+.image-container {
+    position: relative;
+    width: 550px; /* Adjust as needed */
+    height: 600px;
+    margin: 50px auto; /* Center the container on the page */
+
+    display: inline-block;
+    margin: 60px; /* Increased margin to give side text room to breathe */
+    background-color: white; /* Optional: adds a polaroid feel */
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.image-container img {
+    width: 550px;
+    height: 550px;    
+    display: block; /* Removes bottom whitespace gap */
+    object-fit: cover;
+    border: none;   /* Removed the heavy border for a cleaner look */
+}
+
+/* Base text styling */
+.text {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5d4037; /* Matching your brown theme */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap; /* Prevents text from wrapping awkwardly */
+}
+
+/* Position Adjustments */
+
+/* --- Navigation Fix --- */
+body {
+    position: relative; /* Essential for the absolute 'Next' button to work */
+    overflow-x: hidden; /* Prevents sideways scrolling from rotated text */
+}
+
+/* --- Navigation Layouts --- */
+
+/* Top Left Positioning */
+.nav-container-top {
+    position: fixed; /* Fixed so it's always visible */
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+/* Bottom Center Positioning */
+.nav-container-bottom {
+    position: absolute; /* Sits at the bottom of the page content */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* The magic centering trick */
+    z-index: 1000;
+}
+
+/* --- Button Styling --- */
+
+.btn-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #000000; /* Dark brown */
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.btn-nav:hover {
+    background-color: #000000; /* Lighter brown */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Active/Click Effect */
+.btn-nav:active {
+    transform: scale(0.98);
+}
+
+.icon {
+    font-size: 1.1rem;
+}

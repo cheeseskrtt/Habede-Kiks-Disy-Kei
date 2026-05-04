@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrioImutzBirthday</title>
+    <link rel="stylesheet" href="foto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        .btn-nav {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 25px;
+            background-color: #000000;
+            color: #FAF9F6;
+            text-decoration: none;
+            font-family: 'Pirata One', system-ui;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="Pirata">Kei and me :]</h1>
+    <div class="photo-gallery">
+        <div class="gift-container" onclick="openGift(this)">
+            <div class="gift-box">
+                <span class="gift-text">🎁</span>
+            </div>
+            <div class="photo-content">
+                <img src="fotokia.jpeg" alt="Foto 1">
+            </div>
+        </div>
+        <div class="gift-container" onclick="openGift(this)">
+            <div class="gift-box">
+                <span class="gift-text">🎁</span>
+            </div>
+            <div class="photo-content">
+                <img src="fotokia3.jpeg" alt="Foto 2">
+            </div>
+        </div>
+        <div class="gift-container" onclick="openGift(this)">
+            <div class="gift-box">
+                <span class="gift-text">🎁</span>
+            </div>
+            <div class="photo-content">
+                <img src="fotokia4.jpeg" alt="Foto 3">
+            </div>
+        </div>
+        <div class="gift-container" onclick="openGift(this)">
+            <div class="gift-box">
+                <span class="gift-text">🎁</span>
+            </div>
+            <div class="photo-content">
+                <img src="fotokia2.jpeg" alt="Foto 4">
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-container-bottom">
+        <a href="keisha3.html" class="btn-nav">
+            Lanjyut lagi <span class="icon">→</span>
+        </a>
+    </div>
+
+    <div class="nav-container-top" style="margin-top: 20px;">
+        <a href="keisha.html" class="btn-nav" style="background: none; color: #666; border: 1px solid #ddd; font-size: 1rem;">
+            <span class="icon">←</span> Balekkk
+        </a>
+    </div>
+    <script>
+        function openGift(element) {
+            element.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

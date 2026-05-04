@@ -1,0 +1,78 @@
+/* Remove default margins and make the body fill the whole screen */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    text-align: center;      /* Centers the text inside the elements */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FAF9F6; /* Optional: a light festive background */
+}
+
+/* Optional: Add some spacing or style to your elements */
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;       /* Adds space between lines for readability */
+    
+    /* The "Square" Magic */
+    width: 670px;           /* Set a fixed width to force the square shape */
+    text-align: justify;    /* Stretches the text to touch both edges */
+    margin: 0 auto;         /* Keeps the square centered under the H1 */
+}
+
+/* --- Button Styling --- */
+
+.btn-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #000000; /* Dark brown */
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.btn-nav:hover {
+    background-color: #000000; /* Lighter brown */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Active/Click Effect */
+.btn-nav:active {
+    transform: scale(0.98);
+}
+
+.icon {
+    font-size: 1.1rem;
+}
+
+/* --- Navigation Layouts --- */
+
+/* Top Left Positioning */
+.nav-container-top {
+    position: fixed; /* Fixed so it's always visible */
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+/* Bottom Center Positioning */
+.nav-container-bottom {
+    position: fixed; /* Fixed so it's always visible */
+    top: 40px;
+    left: 20px;
+    z-index: 1000;
+}

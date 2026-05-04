@@ -1,0 +1,172 @@
+/* --- Color Theme & Layout --- */
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255); /* Matching your previous pages */
+    font-family: "Playfair Display", serif;
+    overflow-x: hidden;
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.section-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.film-section {
+    border-right: 4px solid #000000; /* The vertical line from your sketch */
+}
+
+.section-title {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+
+/* --- 2x2 Grid Positioning --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 180px); /* Fixed size for better control */
+    grid-template-rows: repeat(2, 180px);
+    gap: 30px;
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.film-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #000000;
+    box-shadow: 0 10px 20px rgba(93, 64, 55, 0.2);
+}
+
+/* --- The Detailed Spinning Vinyl --- */
+.vinyl-disk {
+    width: 180px;
+    height: 180px;
+    background: #111;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    /* This creates the shiny 'groove' look */
+    background: radial-gradient(circle, #333 1px, transparent 1px), #111;
+    background-size: 4px 4px;
+    
+    /* Animation */
+    animation: spin 4s linear infinite;
+    animation-play-state: paused; /* Only spins when hovered */
+}
+
+.vinyl-record:hover .vinyl-disk {
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.vinyl-grooves {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: inset 0 0 10px #000;
+}
+
+.vinyl-label {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    z-index: 2;
+    border: 2px solid #000000;
+    object-fit: cover;
+}
+
+.vinyl-hole {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white; /* Hole shows the background color */
+    border-radius: 50%;
+    z-index: 3;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.5);
+}
+
+/* Hover scale effect for the whole item */
+.grid-item:hover {
+    transform: scale(1.1);
+}
+
+/* --- Navigation Layouts --- */
+
+/* Top Left Positioning */
+.nav-container-top {
+    position: fixed; /* Fixed so it's always visible */
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+/* Bottom Center Positioning */
+/* Top Right Positioning */
+.nav-container-bottom {
+    position: fixed; /* Membuatnya tetap di layar meski di-scroll */
+    top: 20px;       /* Jarak dari atas */
+    right: 20px;     /* Jarak dari kanan */
+    left: auto;      /* Mematikan pengaturan left sebelumnya */
+    transform: none; /* Mematikan trik centering sebelumnya */
+    z-index: 1000;   /* Memastikan tombol berada di lapisan paling atas */
+}
+
+/* --- Button Styling --- */
+
+.btn-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #000000; /* Dark brown */
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.btn-nav:hover {
+    background-color: #303030; /* Lighter brown */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Active/Click Effect */
+.btn-nav:active {
+    transform: scale(0.98);
+}
+
+.icon {
+    font-size: 1.1rem;
+}
