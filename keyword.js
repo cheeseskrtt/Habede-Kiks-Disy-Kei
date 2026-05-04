@@ -15,6 +15,10 @@ function checkAnswer() {
         setTimeout(() => {
             window.location.href = "kingemyu.html"; 
         }, 2000);
+     } else if (input.toLowerCase() === "aldisburgercempakaputihrotinyalembutdagingnyajuicyluicymahalinirizkyfebianbisapesenonline") {
+        setTimeout(() => {
+            window.location.href = "https://youtu.be/Ip6pCjWp4lk?t=6"; 
+        }, 2000);
     } else {
         clickSound.play();
     }}
